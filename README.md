@@ -12,6 +12,10 @@ Which returns a `EPUBInfo::Models::Book` instance, please refer to the [API docu
 
 ## Changelog
 
+**0.4.5** *March 19, 2019*
+
+* Upgraded rubyzip dependency to version 1.6.8.1 and fix nokogiri syntax for fetching cover attribute
+
 **0.4.4** *October 20, 2014*
 
 * Updated `rubyzip` dependency to 1.0. (by [johankok](https://github.com/johankok))
@@ -52,7 +56,7 @@ If you cannot upgrade to `rubyzip` 1.0, use version *0.4.3* of this gem in your 
 *For older versions compare commits with git.*
 
 ## Contributing to epubinfo
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
@@ -65,4 +69,3 @@ If you cannot upgrade to `rubyzip` 1.0, use version *0.4.3* of this gem in your 
 
 Copyright (c) 2012 Christof Dorner. See LICENSE.txt for
 further details.
-
