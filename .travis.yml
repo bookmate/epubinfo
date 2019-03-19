@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------
 
 language: ruby
-script: "bundle exec rake spec"
+script: bundle exec rspec spec
 rvm:
   - 2.5.1
   - ruby-head
