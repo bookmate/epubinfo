@@ -14,7 +14,7 @@ Which returns a `EPUBInfo::Models::Book` instance, please refer to the [API docu
 
 **0.4.5** *March 19, 2019*
 
-* Upgraded dependency to version 1.6.8.1 and fix nokogiri syntax for fetching cover attribute
+* Fix nokogiri syntax for fetching cover attribute
 
 **0.4.4** *October 20, 2014*
 
