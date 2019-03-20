@@ -14,7 +14,8 @@ Which returns a `EPUBInfo::Models::Book` instance, please refer to the [API docu
 
 **0.4.5** *March 19, 2019*
 
-* Fix nokogiri syntax for fetching cover attribute
+* Fix nokogiri syntax for fetching cover attribute(https://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md#164--2014-11-04)
+* Remove Gemfile.lock and use #gemspec helper in Gemfile
 
 **0.4.4** *October 20, 2014*
 
