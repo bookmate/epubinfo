@@ -20,7 +20,7 @@ describe EPUBInfo::Models::Cover do
       end
 
       context 'with cover' do
-        subject do
+        subject(:cover) do
           path = 'spec/support/binary/metamorphosis_epub2.epub'
           parser = EPUBInfo::Parser.parse(path)
           EPUBInfo::Models::Cover.new(parser)
@@ -28,6 +28,10 @@ describe EPUBInfo::Models::Cover do
 
         its(:content_type) { should == 'image/jpeg' }
         its(:original_file_name) { should == 'cover.jpg' }
+
+        it 'returns tempfile with extension' do
+          expect(cover.tempfile.path).to end_with('.jpg')
+        end
 
         it 'should be correct File' do
           subject.tempfile.should be_kind_of Tempfile
