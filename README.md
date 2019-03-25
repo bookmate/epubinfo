@@ -12,6 +12,10 @@ Which returns a `EPUBInfo::Models::Book` instance, please refer to the [API docu
 
 ## Changelog
 
+**0.4.6** *March 25, 2019*
+
+* Create cover tempfile with extension
+
 **0.4.5** *March 19, 2019*
 
 * Fix nokogiri syntax for fetching cover attribute(https://github.com/sparklemotion/nokogiri/blob/master/CHANGELOG.md#164--2014-11-04)

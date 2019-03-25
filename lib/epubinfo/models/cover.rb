@@ -47,7 +47,7 @@ module EPUBInfo
       #   file.size
       #   file.close!
       def tempfile(&block)
-        tempfile = Tempfile.new('epubinfo')
+        tempfile = Tempfile.new(['cover', original_file_extname])
         tempfile.binmode
 
         cover_file = @parser.zip_file.read(zip_file_path)
@@ -63,6 +63,10 @@ module EPUBInfo
       end
 
       private
+
+      def original_file_extname
+        File.extname(original_file_name) if original_file_name
+      end
 
       def epub_cover_file_path
         epub_cover_item.attr('href') if epub_cover_item
